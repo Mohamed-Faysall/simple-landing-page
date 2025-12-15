@@ -7,7 +7,7 @@
 
 body {
     font-family: "poppins", sans-serif;
-    flex: auto;
+    min-width: 53rem;
 }
 
 ul, li, a {
@@ -200,6 +200,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .cta-text h3 {
@@ -212,4 +214,17 @@ header {
 
 .cta-btn a {
     border: solid #fff;
+}
+
+/* -------------------------- */
+
+footer{
+    background: #1f2937;
+}
+
+footer p {
+    padding: 2rem;
+    text-align: center;
+    color: #f9faf8;
+    font-size: 1.8rem;
 }
