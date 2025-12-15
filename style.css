@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "poppins", sans-serif;
+    flex: auto;
 }
 
 ul, li, a {
@@ -16,13 +17,13 @@ ul, li, a {
 
 nav {
     background-color: #1f2937;
-    padding: 0.5rem;
 }
 
 .nav-container {
-    margin: 0 2rem;
+    padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
 .nav-container, .logo {
@@ -33,7 +34,7 @@ nav {
 .links, ul {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .links a {
@@ -43,4 +44,109 @@ nav {
 
 .links a:hover {
     color: #3882f6;
+}
+
+/* -------------------- */
+
+header {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    margin: 5rem;
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.header-container .text  {
+    max-width: 70rem;
+    margin-top: 3rem;
+    padding: 0.5rem;
+}
+
+.header-container .text h1 {
+    margin-bottom: 1rem;
+    line-height: 5rem;
+    color: #f9faf8;
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+
+.header-container .text p {
+    margin-bottom: 3rem;
+    color: #f9faf8;
+    font-size: 2.4rem;
+}
+
+.header-container .photo {
+    max-width: 70rem;
+    margin-top: 3rem;
+}
+
+.header-container .photo img {
+    max-width: 43rem;
+    padding: 1rem;
+}
+
+.btn a {
+    width: 5rem;
+    padding: 1rem 4rem;
+    color: #f9faf8;
+    background-color: #3882f6;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.btn-header a {
+    border: solid #3882f6;
+}
+
+/* -------------------------- */
+
+.features-container {
+    background-color: #f9faf8;
+}
+
+.features-container h2 {
+    padding: 3rem;
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+}
+
+.features-images {
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    max-width: 120rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 3rem;
+}
+
+.features-images .images {
+    width: 20.5rem;
+}
+
+.images .image {
+    width: 20rem;
+    height: 20rem;
+    border: solid #3882f6;
+    border-radius: 3rem;
+}
+
+.images p {
+    padding: 0.5rem 1rem;
+    color: #1f2937;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
